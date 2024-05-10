@@ -51,9 +51,9 @@
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Tag = "1";
+            button2.Text = "Home";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -61,17 +61,18 @@
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Tag = "0";
+            button1.Text = "Settings";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // userControl11
             // 
             userControl11.BackColor = SystemColors.ActiveCaption;
-            userControl11.Location = new Point(214, 4);
+            userControl11.Location = new Point(214, 1);
             userControl11.Name = "userControl11";
-            userControl11.Size = new Size(584, 442);
+            userControl11.Size = new Size(584, 471);
             userControl11.TabIndex = 1;
+            userControl11.Visible = false;
             // 
             // userControl21
             // 
@@ -80,7 +81,7 @@
             userControl21.Name = "userControl21";
             userControl21.Size = new Size(584, 445);
             userControl21.TabIndex = 2;
-            userControl21.Load += userControl21_Load;
+            userControl21.Visible = false;
             // 
             // Form1
             // 

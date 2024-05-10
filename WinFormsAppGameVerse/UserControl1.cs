@@ -16,5 +16,15 @@ namespace WinFormsAppGameVerse
         {
             InitializeComponent();
         }
+
+        public void sayHello()
+        {
+            textBox1.Text = "Hello world";
+        }
+
+        private void UserControl1_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

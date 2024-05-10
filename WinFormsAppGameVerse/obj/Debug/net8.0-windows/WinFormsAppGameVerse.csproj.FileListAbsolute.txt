@@ -16,3 +16,4 @@ C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\WinFormsAppGameVerse.pdb
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\WinFormsAppGameVerse.genruntimeconfig.cache
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\ref\WinFormsAppGameVerse.dll
+C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\WinFormsAppGameVerse.sourcelink.json
