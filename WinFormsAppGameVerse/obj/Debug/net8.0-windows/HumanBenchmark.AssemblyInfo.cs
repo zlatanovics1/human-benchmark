@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("WinFormsAppGameVerse")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("HumanBenchmark")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7f59c88d5e59ad26b81c3236d257687212dbee9")]
-[assembly: System.Reflection.AssemblyProductAttribute("WinFormsAppGameVerse")]
-[assembly: System.Reflection.AssemblyTitleAttribute("WinFormsAppGameVerse")]
+[assembly: System.Reflection.AssemblyProductAttribute("HumanBenchmark")]
+[assembly: System.Reflection.AssemblyTitleAttribute("HumanBenchmark")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]

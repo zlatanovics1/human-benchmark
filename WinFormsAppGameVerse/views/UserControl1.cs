@@ -17,14 +17,20 @@ namespace WinFormsAppGameVerse
             InitializeComponent();
         }
 
-        public void sayHello()
+        public void SayHello(string str,string str2)
         {
-            textBox1.Text = "Hello world";
+            textBox1.Text = str;
+            listBox1.Items.Add(str2);
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

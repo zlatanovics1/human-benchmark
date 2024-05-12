@@ -13,9 +13,17 @@ namespace WinFormsAppGameVerse
         public Form1()
         {
             InitializeComponent();
+
+            //
+            // styling
+            //
             this.WindowState = FormWindowState.Maximized;
             //this.FormBorderStyle = FormBorderStyle.None;
             this.Bounds = Screen.PrimaryScreen!.Bounds;
+
+            //
+            // controllers
+            //
             _ = new HomeController(this);
 
         }
