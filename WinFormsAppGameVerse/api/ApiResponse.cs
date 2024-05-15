@@ -9,6 +9,6 @@ namespace WinFormsAppGameVerse
     internal class ApiResponse<T>
     {
         public string status { get; set; }
-        public T[] data { get; set; }
+        public T data { get; set; }
     }
 }

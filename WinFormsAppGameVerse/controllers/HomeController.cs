@@ -15,42 +15,11 @@ namespace WinFormsAppGameVerse
         public HomeController(Form1 mainForm)
         {
             this.mainForm = mainForm;
-            init();
-            
+        
 
         }
 
-        public async void init()
-        {
-            UserClient userClient = new UserClient();
-            User[] users = await userClient.GetUsers();
-
-            string str = "";
-            string str2 = "";
-            foreach(User user in users)
-            {
-                str += " "  + user.name;
-                str2 += "\n " + user.email;
-            }
-            ((UserControl1)screens[0]).SayHello(str,str2);
-
-            mainForm.Button1.Click += HandleButtonClick!;
-            mainForm.Button2.Click += HandleButtonClick!;
-
-
-            foreach (var screen in screens)
-            {
-                // init screens
-                mainForm.Controls.Add(screen);
-                screen.Width = mainForm.ClientRectangle.Width - mainForm.Panel1.Width;
-                screen.Height = mainForm.ClientRectangle.Height;
-                screen.Location = new Point(mainForm.Panel1.Width, 0);
-                screen.Hide();
-
-            }
-            screens[0].Show();
-            
-        }
+       
         public void HandleButtonClick(object sender, EventArgs e)
         {
 

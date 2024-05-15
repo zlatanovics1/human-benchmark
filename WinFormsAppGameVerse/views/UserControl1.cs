@@ -21,6 +21,7 @@ namespace WinFormsAppGameVerse
         {
             textBox1.Text = str;
             listBox1.Items.Add(str2);
+            
         }
 
         private void UserControl1_Load(object sender, EventArgs e)
@@ -28,9 +29,5 @@ namespace WinFormsAppGameVerse
 
         }
 
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

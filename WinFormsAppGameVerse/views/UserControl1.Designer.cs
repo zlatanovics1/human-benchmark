@@ -47,7 +47,6 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(343, 244);
             listBox1.TabIndex = 1;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // UserControl1
             // 
