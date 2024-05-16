@@ -39,6 +39,7 @@ namespace HumanBenchmark.controllers
                 button.MouseLeave += handleButtonLeave!;
                 button.Click += handleButtonClick!;
                 button.BackColor = CustomColor.PrimaryColor;
+                button.Font = Form1.customFont;
             }
             activateButton(activeButton);
 

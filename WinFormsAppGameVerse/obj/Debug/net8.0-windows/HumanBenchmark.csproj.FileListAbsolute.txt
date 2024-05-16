@@ -26,3 +26,4 @@ C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.views.Support.resources
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.views.Settings.resources
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\bin\Debug\net8.0-windows\Uno.Fonts.Roboto.dll
+C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.CustomScreen.resources

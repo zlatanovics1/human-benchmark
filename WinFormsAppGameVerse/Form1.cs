@@ -1,6 +1,8 @@
 using FontAwesome.Sharp;
 using HumanBenchmark.controllers;
 using HumanBenchmark.views;
+using System.Drawing.Text;
+using System.Windows.Forms;
 
 namespace WinFormsAppGameVerse
 {
@@ -21,12 +23,15 @@ namespace WinFormsAppGameVerse
         public Panel TopBar => panel8;
 
         public System.Windows.Forms.Timer SidebarTimer => sidebarTimer;
-       
-      
+
+        public static Font customFont;
+        public static PrivateFontCollection privateFontCollection = new();
+
 
         public Form1()
         {
             InitializeComponent();
+            LoadRobotoFont();
             
             //
             // styling OBAVEZNO PRE ZVANJE KONTROLERI DA NE KORISTI MANJI WIDTH/HEIGHT
@@ -43,9 +48,20 @@ namespace WinFormsAppGameVerse
 
         }
 
+        private void LoadRobotoFont()
+        {
+            string fontFilePath = "C:\\Users\\zlata\\Downloads\\Montserrat\\Montserrat-VariableFont_wght.ttf";
+            privateFontCollection.AddFontFile(fontFilePath);
+            customFont = new Font(privateFontCollection.Families[0], 14, FontStyle.Regular);
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            LoadRobotoFont();
             initComponents();
+            
+            homeButton.Font = customFont;
+            
         }
 
         public void initComponents()

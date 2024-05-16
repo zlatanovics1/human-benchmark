@@ -27,13 +27,15 @@ namespace WinFormsAppGameVerse
         {
             this.KeyDown += handleTyping!;
             richTextBox1.Text = "Lorem IPSUM sit dolor amet gi rogld fosls forsld".ToLower();
+            // stop focus event
             richTextBox1.ReadOnly = true;
             richTextBox1.TabStop = false;
-            //richTextBox1.KeyDown += handleTyping!;
+            //styling
             richTextBox1.BackColor = this.BackColor;
             richTextBox1.ForeColor = Color.White;
             richTextBox1.Width = ClientRectangle.Width;
             richTextBox1.Font = new Font(Font.FontFamily,30,FontStyle.Italic);
+            richTextBox1.Font = Form1.customFont;
             richTextBox1.Location = new Point(50, this.ClientRectangle.Height / 2 - 50);
             richTextBox1.BorderStyle = BorderStyle.None;
         }

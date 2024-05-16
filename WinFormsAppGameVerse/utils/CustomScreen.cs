@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace HumanBenchmark
         public CustomScreen()
         {
             headingLabel = new Label();
+            string fontFilePath = "C:\\Users\\zlata\\Downloads\\Montserrat\\Montserrat-VariableFont_wght.ttf";
+            Form1.privateFontCollection.AddFontFile(fontFilePath);
         }
         public void init(string name)
         {
