@@ -34,8 +34,8 @@ namespace WinFormsAppGameVerse
             richTextBox1.BackColor = this.BackColor;
             richTextBox1.ForeColor = Color.White;
             richTextBox1.Width = ClientRectangle.Width;
-            richTextBox1.Font = new Font(Font.FontFamily,30,FontStyle.Italic);
-            richTextBox1.Font = Form1.customFont;
+            //richTextBox1.Font = new Font(Font.FontFamily,30,FontStyle.Italic);
+            richTextBox1.Font = CustomFont.LoadFont(30, FontStyle.Italic);
             richTextBox1.Location = new Point(50, this.ClientRectangle.Height / 2 - 50);
             richTextBox1.BorderStyle = BorderStyle.None;
         }
@@ -57,7 +57,7 @@ namespace WinFormsAppGameVerse
                 richTextBox1.SelectionColor = ColorTranslator.FromHtml("#86efac");
 
             richTextBox1.Select(0,typed);
-            richTextBox1.SelectionFont = new Font(Font.FontFamily, 30, FontStyle.Regular);
+            richTextBox1.SelectionFont = CustomFont.LoadFont(30);
             richTextBox1.DeselectAll();
 
         }

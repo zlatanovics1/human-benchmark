@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             flowLayoutPanel1 = new FlowLayoutPanel();
             panel7 = new Panel();
             menuButton = new FontAwesome.Sharp.IconButton();
@@ -45,6 +46,7 @@
             supportButton = new FontAwesome.Sharp.IconButton();
             panel8 = new Panel();
             sidebarTimer = new System.Windows.Forms.Timer(components);
+            pictureBox1 = new PictureBox();
             flowLayoutPanel1.SuspendLayout();
             panel7.SuspendLayout();
             panel5.SuspendLayout();
@@ -52,6 +54,7 @@
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -94,7 +97,6 @@
             menuButton.Size = new Size(310, 124);
             menuButton.TabIndex = 6;
             menuButton.UseVisualStyleBackColor = false;
-            menuButton.Click += menuButton_Click;
             // 
             // panel4
             // 
@@ -267,11 +269,22 @@
             panel8.Size = new Size(1077, 56);
             panel8.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.ActiveCaptionText;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(375, 175);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(1079, 512);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1379, 673);
+            Controls.Add(pictureBox1);
             Controls.Add(panel8);
             Controls.Add(flowLayoutPanel1);
             Name = "Form1";
@@ -284,6 +297,7 @@
             panel2.ResumeLayout(false);
             panel3.ResumeLayout(false);
             panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -309,5 +323,6 @@
         private System.Windows.Forms.Timer sidebarTimer;
         private Home userControl11;
         private Games userControl21;
+        private PictureBox pictureBox1;
     }
 }
