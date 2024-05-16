@@ -11,32 +11,39 @@ namespace HumanBenchmark.controllers
 {
     internal class TransitionController
     {
-        Form1 mainForm;
+        readonly Form1 mainForm;
         bool sideBarHide = false;
         IconButton[] Buttons;
-
+        IconButton activeButton;
 
         public TransitionController(Form1 form) {
             this.mainForm = form;
-
+            activeButton = mainForm.HomeButton;
             Buttons = [mainForm.HomeButton, mainForm.GamesButton, mainForm.StatsButton, mainForm.SettingsButton, mainForm.SupportButton];
             init();
         }
 
         public void init()
         {
-            
+            mainForm.BackColor = CustomColor.SecondaryColor;
+            mainForm.Sidebar.BackColor = CustomColor.PrimaryColor;
+            mainForm.TopBar.BackColor = CustomColor.PrimaryColor;
+            mainForm.MenuButton.BackColor = CustomColor.PrimaryColor;
+            mainForm.MenuButton.IconChar = IconChar.CaretRight;
+
 
             foreach(IconButton button in Buttons)
             {
 
                 button.MouseEnter += handleButtonEnter!;
                 button.MouseLeave += handleButtonLeave!;
+                button.Click += handleButtonClick!;
+                button.BackColor = CustomColor.PrimaryColor;
             }
-
+            activateButton(activeButton);
 
             this.mainForm.MenuButton.Click += handleMenuButtonClick!;
-
+            
             /// sidebar animation
 
             mainForm.SidebarTimer.Interval = 1;
@@ -45,19 +52,38 @@ namespace HumanBenchmark.controllers
          
 
         }
+        public void resetButton(IconButton button)
+        {
+            button.BackColor = CustomColor.PrimaryColor;
+            button.IconColor = Color.White;
+            button.ForeColor = Color.White;
+            button.Padding = new Padding(24, 0, 0, 0);
+        }
+
+        public void activateButton(IconButton button)
+        {
+            button.BackColor = CustomColor.ActiveColor;
+            button.ForeColor = ColorTranslator.FromHtml("#6366f1");
+            button.IconColor = ColorTranslator.FromHtml("#6366f1");
+            button.Padding = new Padding(24 + 5, 0, 0, 0);
+        
+
+        }
+
 
         public void handleSidebarTimerTick(object sender, EventArgs e)
         {
             if (sideBarHide)
             {
 
-                if(mainForm.Sidebar.Width - 25 < 70)
+                if(mainForm.Sidebar.Width - 25 < 80)
                 {
-                    mainForm.Sidebar.Width = 70;
+                    mainForm.Sidebar.Width = 80;
                     mainForm.SidebarTimer.Stop();
-                    return;
+                   
                 }
-                mainForm.Sidebar.Width -= 25;
+                else mainForm.Sidebar.Width -= 25;
+               
             }
             else
             {
@@ -65,9 +91,13 @@ namespace HumanBenchmark.controllers
                 {
                     mainForm.Sidebar.Width = 300;
                     mainForm.SidebarTimer.Stop();
-                    return;
+                    
                 }
-                mainForm.Sidebar.Width += 25;
+                else mainForm.Sidebar.Width += 25;
+            }
+            foreach(var screen in mainForm.Screens)
+            {
+                screen.Location = new Point(mainForm.Sidebar.Width, mainForm.TopBar.Height);
             }
 
         }
@@ -76,16 +106,19 @@ namespace HumanBenchmark.controllers
 
         public void handleMenuButtonClick(object sender, EventArgs e)
         {
+            //mainForm.Sidebar.BringToFront();
             sideBarHide = !sideBarHide;
             mainForm.SidebarTimer.Start();
-            if (sideBarHide) mainForm.MenuButton.IconChar = FontAwesome.Sharp.IconChar.CaretDown;           
-            else mainForm.MenuButton.IconChar = FontAwesome.Sharp.IconChar.CaretRight;           
+            if (sideBarHide) mainForm.MenuButton.IconChar = IconChar.CaretDown;           
+            else mainForm.MenuButton.IconChar = IconChar.CaretRight;           
         }
 
         public void handleButtonEnter(object sender, EventArgs e)
         {
             IconButton button = (IconButton)sender;
-            button.BackColor = ColorTranslator.FromHtml("#6d28d9");
+            if (button == activeButton) return;
+            button.ForeColor = CustomColor.HoverColor;
+            button.IconColor = CustomColor.HoverColor;
             button.Padding = new Padding(button.Padding.Left + 3, 0, 0, 0);
                         
 
@@ -93,9 +126,23 @@ namespace HumanBenchmark.controllers
         public void handleButtonLeave(object sender, EventArgs e)
         {
             IconButton button = (IconButton)sender;
-            button.BackColor = Color.FromArgb(24, 23, 29); 
-            button.Padding = new Padding(24, 0, 0, 0);
+            if (button == activeButton) return;
+            resetButton(button);
+
             
+        }
+
+        public void handleButtonClick(object sender, EventArgs e)
+        {
+
+            IconButton button = (IconButton)sender;
+            if(activeButton == button) return;
+
+            // reset active button
+            resetButton(activeButton);
+
+            activateButton(button);
+            activeButton = button;
         }
     }
 }

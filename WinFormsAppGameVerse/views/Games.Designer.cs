@@ -1,6 +1,6 @@
 ﻿namespace WinFormsAppGameVerse
 {
-    partial class UserControl1
+    partial class Games
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,44 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            textBox1 = new TextBox();
-            listBox1 = new ListBox();
             SuspendLayout();
             // 
-            // textBox1
+            // headingLabel
             // 
-            textBox1.Location = new Point(421, 45);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(343, 27);
-            textBox1.TabIndex = 0;
+            headingLabel.ForeColor = Color.White;
+            headingLabel.Text = "Games";
             // 
-            // listBox1
-            // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(421, 109);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(343, 244);
-            listBox1.TabIndex = 1;
-            // 
-            // UserControl1
+            // Games
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            Controls.Add(listBox1);
-            Controls.Add(textBox1);
-            Name = "UserControl1";
-            Size = new Size(789, 480);
-            Load += UserControl1_Load;
+            BackColor = Color.FromArgb(255, 192, 128);
+            Name = "Games";
+            Size = new Size(849, 525);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private TextBox textBox1;
-        private ListBox listBox1;
     }
 }

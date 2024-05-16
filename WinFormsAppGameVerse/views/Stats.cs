@@ -8,13 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WinFormsAppGameVerse
+namespace HumanBenchmark.views
 {
-    public partial class UserControl2 : UserControl
+    public partial class Stats : CustomScreen
     {
-        public UserControl2()
+        public Stats()
         {
             InitializeComponent();
+            init("Stats");
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

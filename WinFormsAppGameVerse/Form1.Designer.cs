@@ -86,6 +86,7 @@
             menuButton.IconChar = FontAwesome.Sharp.IconChar.CaretDown;
             menuButton.IconColor = Color.White;
             menuButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            menuButton.IconSize = 40;
             menuButton.ImageAlign = ContentAlignment.TopLeft;
             menuButton.Location = new Point(-21, -18);
             menuButton.Name = "menuButton";
@@ -115,12 +116,12 @@
             homeButton.BackColor = Color.FromArgb(23, 24, 29);
             homeButton.Cursor = Cursors.Hand;
             homeButton.FlatAppearance.BorderSize = 0;
-            homeButton.Font = new Font("Segoe UI", 12F);
+            homeButton.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             homeButton.ForeColor = Color.White;
             homeButton.IconChar = FontAwesome.Sharp.IconChar.HomeLgAlt;
             homeButton.IconColor = Color.White;
             homeButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            homeButton.IconSize = 32;
+            homeButton.IconSize = 36;
             homeButton.ImageAlign = ContentAlignment.MiddleLeft;
             homeButton.Location = new Point(-8, -10);
             homeButton.Name = "homeButton";
@@ -146,12 +147,12 @@
             gamesButton.BackColor = Color.FromArgb(23, 24, 29);
             gamesButton.Cursor = Cursors.Hand;
             gamesButton.FlatAppearance.BorderSize = 0;
-            gamesButton.Font = new Font("Segoe UI", 12F);
+            gamesButton.Font = new Font("Segoe UI", 14F);
             gamesButton.ForeColor = Color.White;
             gamesButton.IconChar = FontAwesome.Sharp.IconChar.Gamepad;
             gamesButton.IconColor = Color.White;
             gamesButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            gamesButton.IconSize = 32;
+            gamesButton.IconSize = 36;
             gamesButton.ImageAlign = ContentAlignment.MiddleLeft;
             gamesButton.Location = new Point(-7, -13);
             gamesButton.Name = "gamesButton";
@@ -177,12 +178,12 @@
             statsButton.BackColor = Color.FromArgb(23, 24, 29);
             statsButton.Cursor = Cursors.Hand;
             statsButton.FlatAppearance.BorderSize = 0;
-            statsButton.Font = new Font("Segoe UI", 12F);
+            statsButton.Font = new Font("Segoe UI", 14F);
             statsButton.ForeColor = Color.White;
             statsButton.IconChar = FontAwesome.Sharp.IconChar.ChartColumn;
             statsButton.IconColor = Color.White;
             statsButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            statsButton.IconSize = 32;
+            statsButton.IconSize = 36;
             statsButton.ImageAlign = ContentAlignment.MiddleLeft;
             statsButton.Location = new Point(-7, -10);
             statsButton.Name = "statsButton";
@@ -208,12 +209,12 @@
             settingsButton.BackColor = Color.FromArgb(23, 24, 29);
             settingsButton.Cursor = Cursors.Hand;
             settingsButton.FlatAppearance.BorderSize = 0;
-            settingsButton.Font = new Font("Segoe UI", 12F);
+            settingsButton.Font = new Font("Segoe UI", 14F);
             settingsButton.ForeColor = Color.White;
             settingsButton.IconChar = FontAwesome.Sharp.IconChar.Gear;
             settingsButton.IconColor = Color.White;
             settingsButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            settingsButton.IconSize = 32;
+            settingsButton.IconSize = 36;
             settingsButton.ImageAlign = ContentAlignment.MiddleLeft;
             settingsButton.Location = new Point(-7, -12);
             settingsButton.Name = "settingsButton";
@@ -239,12 +240,12 @@
             supportButton.BackColor = Color.FromArgb(23, 24, 29);
             supportButton.Cursor = Cursors.Hand;
             supportButton.FlatAppearance.BorderSize = 0;
-            supportButton.Font = new Font("Segoe UI", 12F);
+            supportButton.Font = new Font("Segoe UI", 14F);
             supportButton.ForeColor = Color.White;
             supportButton.IconChar = FontAwesome.Sharp.IconChar.Users;
             supportButton.IconColor = Color.White;
             supportButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            supportButton.IconSize = 32;
+            supportButton.IconSize = 36;
             supportButton.ImageAlign = ContentAlignment.MiddleLeft;
             supportButton.Location = new Point(-7, -11);
             supportButton.Name = "supportButton";
@@ -306,5 +307,7 @@
         private Panel panel8;
         private FontAwesome.Sharp.IconButton menuButton;
         private System.Windows.Forms.Timer sidebarTimer;
+        private Home userControl11;
+        private Games userControl21;
     }
 }

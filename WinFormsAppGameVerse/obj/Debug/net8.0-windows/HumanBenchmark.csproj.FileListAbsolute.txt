@@ -7,8 +7,6 @@ C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\bin\Debug\
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.csproj.AssemblyReference.cache
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\WinFormsAppGameVerse.Form1.resources
-C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\WinFormsAppGameVerse.UserControl1.resources
-C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\WinFormsAppGameVerse.UserControl2.resources
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.csproj.GenerateResource.cache
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.AssemblyInfoInputs.cache
@@ -22,3 +20,9 @@ C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.genruntimeconfig.cache
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\ref\HumanBenchmark.dll
 C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\bin\Debug\net8.0-windows\FontAwesome.Sharp.dll
+C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\WinFormsAppGameVerse.Games.resources
+C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\WinFormsAppGameVerse.Home.resources
+C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.views.Stats.resources
+C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.views.Support.resources
+C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\obj\Debug\net8.0-windows\HumanBenchmark.views.Settings.resources
+C:\Users\zlata\source\repos\WinFormsAppGameVerse\WinFormsAppGameVerse\bin\Debug\net8.0-windows\Uno.Fonts.Roboto.dll

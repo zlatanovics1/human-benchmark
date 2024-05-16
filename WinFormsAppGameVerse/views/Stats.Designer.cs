@@ -1,6 +1,6 @@
-﻿namespace WinFormsAppGameVerse
+﻿namespace HumanBenchmark.views
 {
-    partial class UserControl2
+    partial class Stats
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,13 +30,12 @@
         {
             SuspendLayout();
             // 
-            // UserControl2
+            // Stats
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(255, 192, 128);
-            Name = "UserControl2";
-            Size = new Size(849, 525);
+            Name = "Stats";
+            Size = new Size(989, 515);
             ResumeLayout(false);
         }
 

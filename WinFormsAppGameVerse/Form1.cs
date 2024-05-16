@@ -1,12 +1,13 @@
 using FontAwesome.Sharp;
 using HumanBenchmark.controllers;
+using HumanBenchmark.views;
 
 namespace WinFormsAppGameVerse
 {
     public partial class Form1 : Form
     {
 
-
+        public UserControl[] Screens = [new Home(), new Games(),new Stats(),new Settings(),new Support()];
         public IconButton MenuButton => menuButton;
         public IconButton HomeButton => homeButton;
         public IconButton GamesButton => gamesButton;
@@ -17,6 +18,7 @@ namespace WinFormsAppGameVerse
 
 
         public FlowLayoutPanel Sidebar => flowLayoutPanel1;
+        public Panel TopBar => panel8;
 
         public System.Windows.Forms.Timer SidebarTimer => sidebarTimer;
        
@@ -27,7 +29,7 @@ namespace WinFormsAppGameVerse
             InitializeComponent();
             
             //
-            // styling
+            // styling OBAVEZNO PRE ZVANJE KONTROLERI DA NE KORISTI MANJI WIDTH/HEIGHT
             //
             this.WindowState = FormWindowState.Maximized;
             //this.FormBorderStyle = FormBorderStyle.None;
@@ -36,8 +38,8 @@ namespace WinFormsAppGameVerse
             //
             // controllers
             //
-            // _ = new HomeController(this);
             _ = new TransitionController(this);
+            _ = new HomeController(this);
 
         }
 

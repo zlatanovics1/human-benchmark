@@ -26,6 +26,19 @@
             "related": ".xml"
           }
         }
+      },
+      "Uno.Fonts.Roboto/2.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Uno.Fonts.Roboto.dll": {
+            "related": ".uprimarker"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Uno.Fonts.Roboto.dll": {
+            "related": ".uprimarker"
+          }
+        }
       }
     }
   },
@@ -74,12 +87,40 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Uno.Fonts.Roboto/2.3.1": {
+      "sha512": "LVyrMSwKRq/K7ZMH558SLdcPnsVPouNNc18Sr4PDEZKdnD8uU/6sl1W5SPIChAvXxxAtFjSHnYe+7+xWKmtl/Q==",
+      "type": "package",
+      "path": "uno.fonts.roboto/2.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net6.0-windows10.0.18362/Uno.Fonts.Roboto.dll",
+        "lib/net6.0-windows10.0.18362/Uno.Fonts.Roboto.pri",
+        "lib/net6.0-windows10.0.18362/Uno.Fonts.Roboto/Fonts/Roboto-Light.ttf",
+        "lib/net6.0-windows10.0.18362/Uno.Fonts.Roboto/Fonts/Roboto-Medium.ttf",
+        "lib/net6.0-windows10.0.18362/Uno.Fonts.Roboto/Fonts/Roboto-Regular.ttf",
+        "lib/netstandard2.0/Uno.Fonts.Roboto.dll",
+        "lib/netstandard2.0/Uno.Fonts.Roboto.uprimarker",
+        "lib/netstandard2.0/Uno.Fonts.Roboto/Fonts/Roboto-Light.ttf",
+        "lib/netstandard2.0/Uno.Fonts.Roboto/Fonts/Roboto-Medium.ttf",
+        "lib/netstandard2.0/Uno.Fonts.Roboto/Fonts/Roboto-Regular.ttf",
+        "lib/uap10.0.18362/Uno.Fonts.Roboto.dll",
+        "lib/uap10.0.18362/Uno.Fonts.Roboto.pri",
+        "lib/uap10.0.18362/Uno.Fonts.Roboto/Fonts/Roboto-Light.ttf",
+        "lib/uap10.0.18362/Uno.Fonts.Roboto/Fonts/Roboto-Medium.ttf",
+        "lib/uap10.0.18362/Uno.Fonts.Roboto/Fonts/Roboto-Regular.ttf",
+        "uno.fonts.roboto.2.3.1.nupkg.sha512",
+        "uno.fonts.roboto.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "FontAwesome.Sharp >= 6.3.0",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "Uno.Fonts.Roboto >= 2.3.1"
     ]
   },
   "packageFolders": {
@@ -133,6 +174,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "Uno.Fonts.Roboto": {
+            "target": "Package",
+            "version": "[2.3.1, )"
           }
         },
         "imports": [
